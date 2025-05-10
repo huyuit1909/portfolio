@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のポートフォリオ</title>
+    {% assets "css_all" %}
+        <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__inner">
+                <div class="nav__logo">
+                    <div class="logo__container">
+                        <div class="logo__circle"></div>
+                        <div class="logo__text">
+                            <span class="logo__letter">H</span>
+                            <span class="logo__letter">U</span>
+                            <span class="logo__letter">Y</span>
+                            <span class="logo__letter logo__space"></span>
+                            <span class="logo__letter">L</span>
+                            <span class="logo__letter">E</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav__links">
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__circle hero__circle--1"></div>
+            <div class="hero__circle hero__circle--2"></div>
+            <div class="hero__content animate-scaleIn">
+                <p class="hero__subtitle animate-fadeInUp">
+                    <span class="hero__role">
+                        <i class="fas fa-tasks"></i>
+                        プロジェクトマネージャー
+                    </span>
+                    <span class="hero__role">
+                        <i class="fas fa-lightbulb"></i>
+                        プロダクトマネージャー
+                    </span>
+                </p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary animate-slideInLeft">
+                        <i class="fas fa-envelope"></i>
+                        お問い合わせ
+                    </a>
+                    <a href="#projects" class="btn btn--secondary animate-slideInRight">
+                        <i class="fas fa-project-diagram"></i>
+                        プロジェクトを見る
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section__title animate-fadeInUp">About Me</h2>
+                <div class="about__content">
+                    <div class="about__text animate-slideInLeft">
+                        <p>7年のIT分野の経験を持つITプロフェッショナルとして、多くのプロジェクトに従事し、チームをリードしてきました。</p>
+                        <p>最初の3年間は、ベトナムの大手アウトソーシング会社、FPTソフトウェアで働き、大規模なプロジェクト管理スキルを磨きました。その後、自社開発を行うマネーフォワードでプロダクトマネージャーに昇格し、アジャイルスクラムのフレームワークを活用して、製品開発に大きく貢献しました。</p>
+                        <p>異文化のチームと連携しながら、様々なプロジェクトモデルやフレームワークにも柔軟に対応できる能力があり、最新技術やトレンドを学び続ける姿勢を持っています。</p>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat animate-fadeInUp">
+                            <span class="stat__number">7+</span>
+                            <span class="stat__label">年の経験</span>
+                        </div>
+                        <div class="stat animate-fadeInUp">
+                            <span class="stat__number">10+</span>
+                            <span class="stat__label">プロジェクト</span>
+                        </div>
+                        <div class="stat animate-fadeInUp">
+                            <span class="stat__number">N1</span>
+                            <span class="stat__label">日本語能力</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section--dark">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill__level">
+                            <div class="skill__bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <div class="skill__level">
+                            <div class="skill__bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5/CSS3</h3>
+                        <div class="skill__level">
+                            <div class="skill__bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL/MongoDB</h3>
+                        <div class="skill__level">
+                            <div class="skill__bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-aws"></i>
+                        <h3>AWS</h3>
+                        <div class="skill__level">
+                            <div class="skill__bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>プロジェクト管理</h3>
+                        <div class="skill__level">
+                            <div class="skill__bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__container">
+                    <div class="projects__featured">
+                        <div class="project project--large" data-project="salesforce">
+                            <div class="project__image">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="Salesforce開発プロジェクト">
+                                <div class="project__overlay">
+                                    <div class="project__category">Latest Project</div>
+                                    <div class="project__actions">
+                                        <button class="project__action">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <div class="project__meta">
+                                    <span class="project__date">2024.12 - Present</span>
+                                    <span class="project__role">Delivery Manager</span>
+                                </div>
+                                <h3>大手小売業向けSalesforce開発</h3>
+                                <p>Delivery Managerとして、プロジェクト全体の進行管理を担当。Workatoを使用したデータ連携ロジックの構築や、ベンダー間の調整を実施。</p>
+                                <div class="project__tags">
+                                    <span class="tag"><i class="fas fa-cloud"></i> Salesforce</span>
+                                    <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                                    <span class="tag"><i class="fas fa-chart-bar"></i> BigQuery</span>
+                                    <span class="tag"><i class="fab fa-aws"></i> AWS Lambda</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__grid">
+                        <div class="project" data-project="autodesign">
+                            <div class="project__image">
+                                <img src="https://images.unsplash.com/photo-1561883088-039e53143d73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="自動設計支援">
+                                <div class="project__overlay">
+                                    <div class="project__actions">
+                                        <button class="project__action">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <div class="project__meta">
+                                    <span class="project__date">2023.04 - 2024.12</span>
+                                    <span class="project__role">Project Manager</span>
+                                </div>
+                                <h3>自動設計支援</h3>
+                                <p>プロジェクトマネージャーとして、新規プロジェクトの起案から実装まで担当。ユーザーヒアリングやワイヤーフレーム作成を実施。</p>
+                                <div class="project__tags">
+                                    <span class="tag"><i class="fab fa-csharp"></i> C#</span>
+                                    <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+                                    <span class="tag"><i class="fas fa-tasks"></i> PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project" data-project="saas">
+                            <div class="project__image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="SaaSの固定資産管理システム">
+                                <div class="project__overlay">
+                                    <div class="project__actions">
+                                        <button class="project__action">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <div class="project__meta">
+                                    <span class="project__date">2021.04 - 2023.03</span>
+                                    <span class="project__role">Product Manager</span>
+                                </div>
+                                <h3>SaaSの固定資産管理システム</h3>
+                                <p>プロダクトマネージャーとして、新規機能の設計から実装まで担当。税務、法律、会計の知識を活かし、ユーザーフレンドリーな機能を実現。</p>
+                                <div class="project__tags">
+                                    <span class="tag"><i class="fas fa-code"></i> Go</span>
+                                    <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                                    <span class="tag"><i class="fab fa-react"></i> Next.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project" data-project="erp">
+                            <div class="project__image">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="ERPシステム開発">
+                                <div class="project__overlay">
+                                    <div class="project__actions">
+                                        <button class="project__action">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <div class="project__meta">
+                                    <span class="project__date">2019.04 - 2021.04</span>
+                                    <span class="project__role">System Engineer</span>
+                                </div>
+                                <h3>ERPシステム開発</h3>
+                                <p>顧客との要件定義から開発チームとの調整まで担当。3者間での合意形成や、必要なドキュメントシステムの構築を実施。</p>
+                                <div class="project__tags">
+                                    <span class="tag"><i class="fab fa-sap"></i> SAP</span>
+                                    <span class="tag"><i class="fas fa-file-alt"></i> Doc</span>
+                                    <span class="tag"><i class="fas fa-users"></i> Team</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project" data-project="process">
+                            <div class="project__image">
+                                <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="プロセス管理プロジェクト">
+                                <div class="project__overlay">
+                                    <div class="project__actions">
+                                        <button class="project__action">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__content">
+                                <div class="project__meta">
+                                    <span class="project__date">2018.04</span>
+                                    <span class="project__role">QA Engineer</span>
+                                </div>
+                                <h3>プロセス管理プロジェクト</h3>
+                                <p>プロジェクトの開発プロセス管理主任として、品質保証計画の定義や、プロセスレビューの実施を担当。</p>
+                                <div class="project__tags">
+                                    <span class="tag"><i class="fab fa-angular"></i> Angular</span>
+                                    <span class="tag"><i class="fab fa-microsoft"></i> .NET</span>
+                                    <span class="tag"><i class="fas fa-tasks"></i> QA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal__projects">
+            <div class="container">
+                <h2 class="personal__projects-title">Personal Projects</h2>
+                <div class="projects__grid">
+                    <div class="project" data-project="japassist">
+                        <div class="project__image">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="AIを活用した日本語学習プラットフォーム">
+                            <div class="project__overlay">
+                                <div class="project__actions">
+                                    <a href="https://japassist.tech/" target="_blank" class="project__action">Visit Site</a>
+                                    <button class="project__action">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__meta">
+                                <span class="project__date">2025.01 - Present</span>
+                                <span class="project__role">Full Stack Developer</span>
+                            </div>
+                            <h3>AIを活用した日本語学習プラットフォーム</h3>
+                            <p>OpenAI APIを活用して、個別最適化された日本語学習体験を提供するプラットフォームを開発。文法チェック、会話練習、作文添削などの機能を実装。</p>
+                            <div class="project__tags">
+                                <span class="tag"><i class="fas fa-brain"></i> OpenAI</span>
+                                <span class="tag"><i class="fab fa-python"></i> Python</span>
+                                <span class="tag"><i class="fab fa-react"></i> React</span>
+                                <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div class="modal" id="modal-japassist">
+            <div class="modal__content">
+                <button class="modal__close">&times;</button>
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="AIを活用した日本語学習プラットフォーム" class="modal__image">
+                <div class="modal__body">
+                    <h3 class="modal__title">AIを活用した日本語学習プラットフォーム</h3>
+                    <div class="modal__description">
+                        <p>AI技術を活用し、ユーザーが日本語のライティングスキルを向上させ、新しい語彙を学び、自身の語彙を効果的に管理できるプラットフォームを構築します。</p>
+                        <h4>主な機能：</h4>
+                        <ul>
+                            <li>日本語ライティング支援
+                                <ul>
+                                    <li>ユーザーが日本語の文章や文書を作成し、AIが自然な表現になるように修正をサポート</li>
+                                    <li>修正内容に対する詳細な説明と、より良い表現を学ぶためのアドバイスを提供</li>
+                                    <li>ユーザーがAIに頼るだけでなく、自ら学び改善できるよう導く</li>
+                                </ul>
+                            </li>
+                            <li>語彙学習
+                                <ul>
+                                    <li>単語の意味、実際の例文、よく使われる文脈や状況の提供</li>
+                                    <li>効果的に記憶するためのコツやイメージの提供</li>
+                                </ul>
+                            </li>
+                            <li>語彙の管理・復習
+                                <ul>
+                                    <li>ユーザーが学びたい単語を保存し、個別の学習リストを作成可能</li>
+                                    <li>単語の習熟度に応じてステータスを設定</li>
+                                    <li>学習進捗を可視化し、復習機能を活用して効率的に習得</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__details">
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">開発期間</span>
+                            <span class="modal__detail-value">2024年4月 - 現在</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">役割</span>
+                            <span class="modal__detail-value">個人開発</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">URL</span>
+                            <span class="modal__detail-value"><a href="https://japassist.tech/" target="_blank">https://japassist.tech/</a></span>
+                        </div>
+                    </div>
+                    <div class="modal__tags">
+                        <span class="tag"><i class="fas fa-robot"></i> AI</span>
+                        <span class="tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tag"><i class="fab fa-react"></i> React</span>
+                        <span class="tag"><i class="fas fa-database"></i> MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-saas">
+            <div class="modal__content">
+                <button class="modal__close">&times;</button>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="SaaSの固定資産管理システム" class="modal__image">
+                <div class="modal__body">
+                    <h3 class="modal__title">SaaSの固定資産管理システム</h3>
+                    <div class="modal__description">
+                        <p>プロダクトマネージャーとして、新規機能の設計から実装まで担当。税務、法律、会計の知識を活かし、ユーザーフレンドリーな機能を実現しました。</p>
+                        <h4>主な業務内容：</h4>
+                        <ul>
+                            <li>新規開発機能の業務内容を理解し、デザイナーと相談して仕様を決定
+                                <ul>
+                                    <li>税務、法律上、会計上の内容を理解して機能に落とし込む</li>
+                                    <li>UIとUXを考慮しながら機能化</li>
+                                    <li>Figmaでプロトタイプを作成</li>
+                                </ul>
+                            </li>
+                            <li>プロダクト開発マネジメント
+                                <ul>
+                                    <li>User Storyの起票と管理</li>
+                                    <li>リファクタリングプランの作成</li>
+                                    <li>Product Road Mapの策定と調整</li>
+                                </ul>
+                            </li>
+                            <li>チームマネジメント
+                                <ul>
+                                    <li>スクラムイベントのホスト</li>
+                                    <li>キャパシティとベロシティの管理</li>
+                                    <li>業務知識のトレーニング実施</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__details">
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">期間</span>
+                            <span class="modal__detail-value">2021年4月 - 2023年3月</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">役割</span>
+                            <span class="modal__detail-value">プロダクトマネージャー</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">チーム規模</span>
+                            <span class="modal__detail-value">10-50人</span>
+                        </div>
+                    </div>
+                    <div class="modal__tags">
+                        <span class="tag"><i class="fas fa-code"></i> Go</span>
+                        <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tag"><i class="fab fa-react"></i> Next.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-salesforce">
+            <div class="modal__content">
+                <button class="modal__close">&times;</button>
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="Salesforce開発プロジェクト" class="modal__image">
+                <div class="modal__body">
+                    <h3 class="modal__title">大手小売業向けSalesforce開発</h3>
+                    <div class="modal__description">
+                        <p>Delivery Managerとして、プロジェクト全体の進行管理を担当。Workatoを使用したデータ連携ロジックの構築や、ベンダー間の調整を実施しました。</p>
+                        <h4>主な業務内容：</h4>
+                        <ul>
+                            <li>プロジェクト管理
+                                <ul>
+                                    <li>プロジェクト管理のためのメトリクスを作成し、運用</li>
+                                    <li>プロジェクトの予算およびリソースの管理</li>
+                                    <li>進捗報告会のホスト</li>
+                                </ul>
+                            </li>
+                            <li>システム開発
+                                <ul>
+                                    <li>Workatoを使用したデータ連携ロジックの開発</li>
+                                    <li>検索画面、承認画面、データ可視化のためのダッシュボードの開発</li>
+                                    <li>要件定義書の作成と開発チームへの共有</li>
+                                </ul>
+                            </li>
+                            <li>品質管理
+                                <ul>
+                                    <li>ユーザー受け入れテスト（UAT）の計画・実施・管理</li>
+                                    <li>Backlogを使用したチケット管理</li>
+                                    <li>進捗状況のレポート作成</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__details">
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">期間</span>
+                            <span class="modal__detail-value">2024年12月 - 現職</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">役割</span>
+                            <span class="modal__detail-value">Delivery Manager</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">チーム規模</span>
+                            <span class="modal__detail-value">10-50人</span>
+                        </div>
+                    </div>
+                    <div class="modal__tags">
+                        <span class="tag"><i class="fas fa-cloud"></i> Salesforce</span>
+                        <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fas fa-chart-bar"></i> BigQuery</span>
+                        <span class="tag"><i class="fab fa-aws"></i> AWS Lambda</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-erp">
+            <div class="modal__content">
+                <button class="modal__close">&times;</button>
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="ERPシステム開発" class="modal__image">
+                <div class="modal__body">
+                    <h3 class="modal__title">ERPシステム開発</h3>
+                    <div class="modal__description">
+                        <p>顧客との要件定義から開発チームとの調整まで担当。3者間での合意形成や、必要なドキュメントシステムの構築を実施しました。</p>
+                        <h4>主な業務内容：</h4>
+                        <ul>
+                            <li>顧客と協力して、プロジェクトの要件を受け取り、最終化</li>
+                            <li>要求を開発チームに伝え、3者間で議論し、合意を得る</li>
+                            <li>プロジェクト実施に必要なタイムライン、チャート、ドキュメントシステムの構築</li>
+                            <li>設計書、Q&A、テスト仕様書、提案書などのITドキュメントの翻訳と管理</li>
+                            <li>定例会議Q&Aや問題解決のための会議、キックオフミーティングなどの通訳</li>
+                            <li>チームリーダーとして小規模のITコミュニケーターチームを管理</li>
+                            <li>新人メンバーのトレーニングを実施</li>
+                        </ul>
+                    </div>
+                    <div class="modal__details">
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">期間</span>
+                            <span class="modal__detail-value">2019年4月 - 2021年4月</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">役割</span>
+                            <span class="modal__detail-value">システムエンジニア / スクラムマスター</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">チーム規模</span>
+                            <span class="modal__detail-value">1-10人</span>
+                        </div>
+                    </div>
+                    <div class="modal__tags">
+                        <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tag"><i class="fab fa-sap"></i> SAP</span>
+                        <span class="tag"><i class="fas fa-file-alt"></i> ドキュメント管理</span>
+                        <span class="tag"><i class="fas fa-users"></i> チーム管理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-process">
+            <div class="modal__content">
+                <button class="modal__close">&times;</button>
+                <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="プロセス管理プロジェクト" class="modal__image">
+                <div class="modal__body">
+                    <h3 class="modal__title">プロセス管理プロジェクト</h3>
+                    <div class="modal__description">
+                        <p>プロジェクトの開発プロセス管理主任として、品質保証計画の定義や、プロセスレビューの実施を担当しました。</p>
+                        <h4>主な業務内容：</h4>
+                        <ul>
+                            <li>プロセス・製品検証
+                                <ul>
+                                    <li>ソフトウェア品質保証計画の定義</li>
+                                    <li>プロセスと手法の監視と確認</li>
+                                    <li>品質目標の定義とモニタリング</li>
+                                </ul>
+                            </li>
+                            <li>レビューと監査
+                                <ul>
+                                    <li>プロセスレビューとワークプロダクトレビューの実施</li>
+                                    <li>会社の標準プロセス、テンプレートとの整合性確認</li>
+                                    <li>品質状況報告書の作成</li>
+                                </ul>
+                            </li>
+                            <li>リスク管理
+                                <ul>
+                                    <li>見積もり段階でのリスクアセスメント実施</li>
+                                    <li>プロジェクト固有のプロセスの最適化</li>
+                                    <li>新しい要件へのフィードバック提供</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__details">
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">期間</span>
+                            <span class="modal__detail-value">2018年4月 - 2018年4月</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">役割</span>
+                            <span class="modal__detail-value">QAエンジニア / スクラムマスター</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">チーム規模</span>
+                            <span class="modal__detail-value">1-10人</span>
+                        </div>
+                    </div>
+                    <div class="modal__tags">
+                        <span class="tag"><i class="fab fa-angular"></i> Angular</span>
+                        <span class="tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="tag"><i class="fab fa-microsoft"></i> ASP.NET</span>
+                        <span class="tag"><i class="fas fa-tasks"></i> プロセス管理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-autodesign">
+            <div class="modal__content">
+                <button class="modal__close">&times;</button>
+                <img src="https://images.unsplash.com/photo-1561883088-039e53143d73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400" alt="自動設計支援" class="modal__image">
+                <div class="modal__body">
+                    <h3 class="modal__title">自動設計支援</h3>
+                    <div class="modal__description">
+                        <p>プロジェクトマネージャーとして、新規プロジェクトの起案から実装まで担当。ユーザーヒアリングやワイヤーフレーム作成を実施しました。</p>
+                        <h4>主な業務内容：</h4>
+                        <ul>
+                            <li>プロジェクト開始前（提案フェーズ）
+                                <ul>
+                                    <li>新規プロジェクトの起案
+                                        <ul>
+                                            <li>現行システムの調査・ユーザヒーリングの実施</li>
+                                            <li>ワイヤーフレーム作成</li>
+                                            <li>要件定義書の作成</li>
+                                        </ul>
+                                    </li>
+                                    <li>タスク優先度とロードマップの設定
+                                        <ul>
+                                            <li>お客様の温度感に合わせた調整</li>
+                                            <li>リソースの最適化を図り、優先順位を付けたタスクリストを作成</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>プロジェクト開始後
+                                <ul>
+                                    <li>各種設計の作成と開発依頼
+                                        <ul>
+                                            <li>基本設計書、詳細設計書の作成</li>
+                                            <li>開発依頼の管理</li>
+                                        </ul>
+                                    </li>
+                                    <li>プロジェクト進捗管理
+                                        <ul>
+                                            <li>JiraとBacklogを使用したタスク進捗管理</li>
+                                            <li>リソース状況の確認</li>
+                                            <li>進捗レポートの作成</li>
+                                        </ul>
+                                    </li>
+                                    <li>開発サポート
+                                        <ul>
+                                            <li>技術的課題の解決支援</li>
+                                            <li>サポートドキュメントの作成</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__details">
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">期間</span>
+                            <span class="modal__detail-value">2023年4月 - 2024年12月</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">役割</span>
+                            <span class="modal__detail-value">プロジェクトマネージャー</span>
+                        </div>
+                        <div class="modal__detail-item">
+                            <span class="modal__detail-label">チーム規模</span>
+                            <span class="modal__detail-value">10-50人</span>
+                        </div>
+                    </div>
+                    <div class="modal__tags">
+                        <span class="tag"><i class="fab fa-csharp"></i> C#</span>
+                        <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tag"><i class="fas fa-tasks"></i> プロジェクト管理</span>
+                        <span class="tag"><i class="fas fa-pencil-ruler"></i> 設計</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="section section--dark">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <i class="fas fa-envelope"></i>
+                            <span>huyuit1909@gmail.com</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>東京都</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-language"></i>
+                            <span>日本語（N1）・英語（TOEIC 700）・ベトナム語（ネイティブ）</span>
+                        </div>
+                        <div class="contact__item">
+                            <i class="fas fa-certificate"></i>
+                            <span>基本情報技術者試験・情報セキュリティマネジメント試験</span>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://github.com/huyuit1909" class="social__link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/huyuit1909" class="social__link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://japassist.tech/" class="social__link"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Huy Le. All rights reserved.</p>
+        </div>
+    </footer>
+
+    {% assets "js_all" %}
+        <script src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</body>
+</html> 
